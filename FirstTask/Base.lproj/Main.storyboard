@@ -23,9 +23,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="MDP-tm-yA3" kind="show" identifier="ShowSecondTVC" id="iAq-ZM-HiZ"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -34,6 +31,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Iwu-BE-hlq"/>
+                    <connections>
+                        <segue destination="MDP-tm-yA3" kind="show" identifier="goToSecondTVC" id="I9W-Bb-Xwy"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t1o-cn-Yct" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
