@@ -42,14 +42,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yb7-5A-s5f">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yb7-5A-s5f">
                                 <rect key="frame" x="20" y="58" width="374" height="804"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UX0-lH-YSe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yb7-5A-s5f" firstAttribute="leading" secondItem="UX0-lH-YSe" secondAttribute="leading" constant="20" id="7eZ-9g-uTP"/>
+                            <constraint firstItem="yb7-5A-s5f" firstAttribute="top" secondItem="UX0-lH-YSe" secondAttribute="top" constant="14" id="9SG-Gp-oPT"/>
+                            <constraint firstItem="UX0-lH-YSe" firstAttribute="trailing" secondItem="yb7-5A-s5f" secondAttribute="trailing" constant="20" id="rF5-gF-Gjh"/>
+                            <constraint firstItem="yb7-5A-s5f" firstAttribute="bottom" secondItem="UX0-lH-YSe" secondAttribute="bottom" id="yku-15-yT5"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="tableView2" destination="yb7-5A-s5f" id="OeH-dJ-Lf1"/>
