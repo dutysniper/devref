@@ -35,10 +35,18 @@ extension SecondViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView2.dequeueReusableCell(withIdentifier: String(describing: CustomTableViewCell.self)) as! CustomTableViewCell
-//        cell.customImageView.image = UIImage(named: devRefArray[indexPath.row].name[indexPath.row])
-//        cell.customLabel.text = devRefArray[indexPath.row].name[indexPath.row]
-//        cell.customLabel.numberOfLines = 0
-        print("СЮДА СМОТРИё\(indexPath.section)")
+        cell.customImageView.image = UIImage(named: devRefArray[indexPath.section].name[indexPath.row])
+        cell.customLabel.text = devRefArray[indexPath.section].name[indexPath.row]
+        cell.customLabel.numberOfLines = 0
         return cell
+    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let section = self.devRefArray[section].category
+        return section
+    }
+    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+        view.tintColor = .clear
+        let header = view as! UITableViewHeaderFooterView
+        header.textLabel?.textColor = .gray
     }
 }

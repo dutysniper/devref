@@ -107,11 +107,10 @@ extension FirstViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let secondVC = storyboard?.instantiateViewController(withIdentifier: "SecondVC") as! SecondViewController
         navigationController?.pushViewController(secondVC, animated: true)
-        
-        switch tableView.indexPathForSelectedRow! {
-            case [0, 0]: secondVC.devRefArray = algorithm
-            case [0, 1]: secondVC.devRefArray = pattern
-            case [0, 2]: secondVC.devRefArray = structures
+        switch indexPath.row {
+            case 0: secondVC.devRefArray = algorithm
+            case 1: secondVC.devRefArray = pattern
+            case 2: secondVC.devRefArray = structures
             default: break
         }
     }
