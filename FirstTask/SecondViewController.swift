@@ -48,5 +48,6 @@ extension SecondViewController: UITableViewDataSource {
         view.tintColor = .clear
         let header = view as! UITableViewHeaderFooterView
         header.textLabel?.textColor = .gray
+        
     }
 }

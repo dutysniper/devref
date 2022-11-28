@@ -13,7 +13,6 @@ class CustomTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         customLabel.text = "Название"
-        
+       
     }
- 
 }
